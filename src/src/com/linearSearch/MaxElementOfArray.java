@@ -1,4 +1,4 @@
-package com.Arrays;
+package com.linearSearch;
 
 public class MaxElementOfArray {
     static void main() {
