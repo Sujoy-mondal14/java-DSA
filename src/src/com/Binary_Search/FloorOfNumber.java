@@ -8,7 +8,7 @@ public class FloorOfNumber {
     }
     static int floorOfNumber(int[] arr, int target) {
         //if taget element is smaller than the smallest element of the array
-        if(target < arr[0]) return arr[0];
+        if(target < arr[0]) return Integer.MIN_VALUE;
 
         int start = 0;
         int end = arr.length - 1;

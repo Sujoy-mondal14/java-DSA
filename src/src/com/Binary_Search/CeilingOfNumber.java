@@ -10,7 +10,7 @@ public class CeilingOfNumber {
 
     static int celingofNumber(int[] arr, int target){
         //if the target element is greater than max element of array
-        if(target > arr[arr.length-1]) return arr[arr.length-1];
+        if(target > arr[arr.length-1]) return Integer.MAX_VALUE;
 
         int start = 0;
         int end = arr.length - 1;
@@ -18,7 +18,7 @@ public class CeilingOfNumber {
         while(start <= end){
             int mid = start + ( end-start)/2 ;
 
-            if(arr[mid]== target) return arr[mid];
+            if(arr[mid] == target) return arr[mid];
 
             if(target > arr[mid]) start = mid +1 ;
             else if (target < arr[mid]) end = mid - 1 ;
